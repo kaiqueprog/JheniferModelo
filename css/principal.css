@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Lato','Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #272343;
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #272343;
+}
+/*Importações
+----------------------------------*/
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/*Formatações Geral
+----------------------------------*/
+@font-face {
+  font-family: "h2";
+  src: url('../fonts/h2.woff');
+}
+@font-face {
+font-family: "font";
+src: url('../fonts/font1.woff');
+}
+
+/*Menu Principal
+----------------------------------*/
+.navbar {
+  /* background-color: #fff; */
+	height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.nav-color-nav {
+  background-color: rgba(255,255,255,0.7);
+  transition: background .5s linear;
+}
+#logo-img {
+	margin: 0;
+	border-radius: 30px;
+	border: 2px solid lime;
+}
+.navbar-brand img {
+	width: 60px;
+	float: left;
+}
+.logo-texto {
+	color: #272343;
+	margin-top: 7px;
+	margin-left: 2px;
+}
+.logo-texto h3,.logo-texto p {
+	margin: 0;
+}
+.logo-texto h3 {
+	margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+.logo-texto p {
+	font-size: 0.5em;
+}
+ul.navbar-nav li a {
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+ul.navbar-nav li a:hover {
+  color: #00ff30;
+  border: 1px solid #00ff30;
+  border-radius: 10px;
+}
+ul.reder-sociais-menu li {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+}
+ul.reder-sociais-menu a {
+  padding: 10px;
+  border-radius: 10px;
+}
+ul.reder-sociais-menu a:hover {
+  color: #fff;
+  transition: all .1s;
+}
+a.fa-facebook:hover {
+  background-color: #3059b0;
+  text-decoration: none;
+}
+a.fa-instagram:hover {
+  background: linear-gradient(#515BD4,#8134AF,#DD2A7B,#FEDA77,#F58529);
+  text-decoration: none;
+}
+/*
+******** Navegação Mobile **********
+*/
+#nav-toggle{
+  z-index:11;
+  background:rgba(0, 255, 0, 0.8);
+  padding:15px;
+  right:0;
+  top:0;
+  border-radius:8px;
+  -webkit-transition:all .4s ease;
+  transition:all .4s ease
+}
+#nav-toggle span{
+  border-radius:1px;
+  background:#fff;
+  height:2px;
+  width:30px;
+  display:block;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+  -webkit-transition:all .4s ease;
+  transition:all .4s ease
+}
+#nav-toggle span:nth-child(2){
+  margin:6px 0
+}
+#nav-toggle.active span:nth-child(1){
+  -webkit-transform:rotate(45deg) translate3d(6px,6px,0);
+  transform:rotate(45deg) translate3d(6px,6px,0)
+}
+#nav-toggle.active span:nth-child(2){
+  opacity:0
+}
+#nav-toggle.active span:nth-child(3){
+  -webkit-transform:rotate(-45deg) translate3d(6px,-5px,0);
+  transform:rotate(-45deg) translate3d(6px,-5px,0)
+}
+#nav-mobile {
+  transition: all .5s;
+}
+
+/*Area Principal
+----------------------------------*/
+#principal-layout {
+  width: 100%;
+  height: auto;
+}
+.carousel-control-next, .carousel-control-prev {
+  padding: 0;
+  margin: 0;
+}
+.btn-ouline-lime {
+  color: #00ff00;
+  border-color: #00ff30;
+}
+.btn-ouline-lime:hover {
+  color: #fff;
+  background-color: #00ff30;
+}
+.texto-carousel {
+  align-self: center;
+  z-index: 5;
+}
+.texto-carousel h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgb(100, 99, 99);
+
+}
+.texto-carousel h4 {
+  font-size: x-large;
+  font-weight: 300;
+  color: rgb(143, 139, 139);
+}
+.texto-carousel a {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 10px 15px;
+  box-shadow: 1px 6px 8px 0 rgba(75, 81, 91, 0.11);
+  border-radius: 25px;
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-indicators li {
+  height: 2px;
+  background-color: rgba(0, 255, 0,.9);
+}
+/*Area Biografia
+----------------------------------*/
+#biografia {
+  background: url('../img/biografia.png') repeat-y;
+  padding: 15px 0;
+}
+.biografia {
+  border: 1px solid #00ff00;
+}
+.biografia h2 {
+  color: #272343;
+  text-shadow: 1px 1px 1px rgb(177, 177, 177);
+  font-size: 1.5em;
+}
