@@ -17,7 +17,7 @@ html{
 }
  /* navegação principal */
 .navbar {
-    position: stycky;
+    position: absolute;
     z-index: 500;
     width: 100%;
     padding: 30px 0;
